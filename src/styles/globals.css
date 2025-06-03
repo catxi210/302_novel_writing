@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Fonts */
+@font-face {
+  font-family: '默认字体';
+  src: url('/font/默认字体.otf') format('opentype');
+}
+
+@font-face {
+  font-family: '宋体';
+  src: url('/font/宋体.otf') format('opentype');
+}
+
+@font-face {
+  font-family: '宋体Light';
+  src: url('/font/宋体Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: '黑体Light';
+  src: url('/font/黑体Light.otf') format('opentype');
+}
+
+/* Chinese Fonts */
+@font-face {
+  font-family: '粗圆体';
+  src: url('/font/zh/粗圆体.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '方体';
+  src: url('/font/zh/方体.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '行书';
+  src: url('/font/zh/行书.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '行书简体';
+  src: url('/font/zh/行书简体.otf') format('opentype');
+}
+
+@font-face {
+  font-family: '雅黑';
+  src: url('/font/zh/雅黑.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '圆体';
+  src: url('/font/zh/圆体.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '珠海体';
+  src: url('/font/zh/珠海体.ttf') format('truetype');
+}
+
+/* English Fonts */
+@font-face {
+  font-family: 'Arapey Thin';
+  src: url('/font/en/Arapey-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville Italic';
+  src: url('/font/en/LibreBaskerville-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playball Regular';
+  src: url('/font/en/Playball-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Bold Italic';
+  src: url('/font/en/Poppins-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins Extra Bold';
+  src: url('/font/en/Poppins-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins Light';
+  src: url('/font/en/Poppins-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('/font/en/Poppins-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Satisfy Regular';
+  src: url('/font/en/Satisfy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Varela Regular';
+  src: url('/font/en/Varela-Regular.ttf') format('truetype');
+}
+
+/* Japanese Fonts */
+@font-face {
+  font-family: 'Aoyagi Kouzan';
+  src: url('/font/ja/AoyagiKouzanTOTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Kouzan Sousho';
+  src: url('/font/ja/KouzanSoushoOTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Taiwan Pearl Extra Light';
+  src: url('/font/ja/TaiwanPearl-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Taiwan Pearl Regular';
+  src: url('/font/ja/TaiwanPearl-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'お手製Rwi B';
+  src: url('/font/ja/お手製Rwiフォント B (v2.0).ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'お手製Rwi C 袋文字';
+  src: url('/font/ja/お手製Rwiフォント C (v3.0) 袋文字.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'お手製Rwi C 立体';
+  src: url('/font/ja/お手製Rwiフォント C (v3.0) 立体.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'お手製Rwi C';
+  src: url('/font/ja/お手製Rwiフォント C (v3.0).ttf') format('truetype');
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*
+  Custom Shadcn UI theme for 302 AI
+*/
+@layer base {
+  :root {
+    --page-background: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262.1 83.3% 57.8%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --page-background: 224 71.4% 4.1%;
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 263.4 70% 50.4%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply h-fit min-h-screen bg-pageBackground text-foreground dark:bg-background;
+  }
+}
+
+
+.p_margin_0 p {
+  margin: 0 !important;
+}
+
+.text_indent p:first-child {
+  text-indent: 32px;
+}
+
+.quill_p p {
+  margin-bottom: 15px !important;
+}
+
+.quill_indent p {
+  text-indent: 32px;
+}
+
+.ql-editor {
+  line-height: unset !important;
+}
+.ql-container{
+  font-size: unset !important;
+  font-family: unset !important;
+}
+
+.ql-placeholder .ql-editor.ql-blank::before{
+  left: 50px !important;
+}
+
+.book::before{
+  content: "";
+    position: absolute;
+    z-index: 8;
+    width: 8px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    background-image: url('/images/global/Book marks.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.book::after{
+  content: "";
+    position: absolute;
+    z-index: 8;
+    width: 8px;
+    height: 100%;
+    top: 0;
+    left: 5px;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    background-image: url('/images/global/Book marks.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
